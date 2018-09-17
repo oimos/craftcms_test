@@ -13,13 +13,13 @@
 
 {% set billboard = entry.billboardImage.first() %}
 <div class="billboard-area" style="background:url('{{billboard.url}}');">
-  
+
    <div class="row justify-content-center">
        <div class="col-md-6">
     <div class="content {% if entry.lightText %}light {% else %} dark {% endif %} {% if entry.textShadow %}textShadow{% endif %}">
-       {% if entry.headline %} 
+       {% if entry.headline %}
         <h1>{{entry.headline}}</h1>
-       {% endif %}        
+       {% endif %}
         {% if entry.subHeadline %}
           <p>{{entry.subHeadline}}</p>
         {% endif %}
